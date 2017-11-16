@@ -7,8 +7,29 @@
 </head>
 <body>
 	<div clas="container">
-		<div class="row center-align">
-			<h3>This is the index!</h3>
+		<div class="row">
+			<h4 class="center-align">Welcome!</h4>
+			<div class="col s4 offset-s2">
+				<form class="col s10" action="/register" merhod="post">
+					<h5>Register</h5>
+					<label for="name">Name<input type="text" name="name"></label>
+					<label for="alias">Alias<input type="text" name="alias"></label>
+					<label for="r_email">Email<input type="text" name="r_email"></label>
+					<label for="r_pass">Password<input type="text" name="r_pass"></label>
+					<label for="r_pass_c">Confirm Password<input type="text" name="r_pass_c"></label>
+					<input class="btn orange lighten-2" type="submit" value="Register">
+				</form>
+			</div><!-- col -->
+
+			<div class="col s4 offset-s1">
+				<form class="col s10" action="/register" merhod="post">
+					<h5>Log in</h5>
+					<label for="l_email">Email<input type="text" name="l_email"></label>
+					<label for="l_pass">Password<input type="text" name="l_pass"></label>
+					<input class="btn orange lighten-2" type="submit" value="Log in">
+				</form>
+			</div><!-- col -->
+
 		</div><!-- row -->
 	</div>	<!-- container -->
 
